@@ -16,7 +16,7 @@ function   Header(){
             <div className="collapse navbar-collapse">
                 <ul className="nav navbar-nav navbar-right">
                     <li><a href="index.html" className="smoothScroll">Home</a></li>
-                    <li><a href="pages/login.html" className="smoothScroll">Login</a></li>
+                    <li><a href="login.html" className="smoothScroll">Login</a></li>
                   
                    <hr/>
 

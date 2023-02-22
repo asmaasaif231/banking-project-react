@@ -1,14 +1,13 @@
-import sectionTwoImage1 from './images/team-img1.jpg';
-import sectionTwoImage2 from './images/team-img2.jpg';
 
-function  SectionTwoP2(){
+
+function  SectionTwoP2(props){
     return (
 <div className="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
     <div className="about-thumb">
-        <img src={sectionTwoImage1} className="img-responsive" alt="Team"/>
+        <img src={props.imageName} className="img-responsive" alt="Team"/>
         <div className="about-overlay">
-            <h3>Sandar Lynn</h3>
-            <h4>HR manager</h4>
+            <h3>{props.eName}</h3>
+            <h4>{props.ePosition}</h4>
            
         </div>
     </div>

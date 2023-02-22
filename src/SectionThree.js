@@ -1,17 +1,17 @@
-function  SectionThree(){
+function  SectionThree(props){
     return (
         <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
             <div class="pricing-plan">
                 <div class="pricing-month">
-                    <h2>Problem-solving test</h2>
+                    <h2>{props.testName}</h2>
                 </div>
                 <div class="pricing-title">
-                    <h3>Intermediate</h3>
+                    <h3>{props.testLevel}</h3>
                 </div>
-                <p>Managers</p>
-                <p>Presents one or more problems and asks to provide solutions</p>
-                <p>20 Questions</p>
-                <p>1 professional Certificate</p>
+                <p>{props.forWho}</p>
+                <p>{props.info}</p>
+                <p>{props.noQ}</p>
+                <p>{props.cert}</p>
                 
             </div>
         </div>

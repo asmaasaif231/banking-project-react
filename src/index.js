@@ -7,6 +7,8 @@ import SectionOne from './SectionOne';
 import SectionTwoP1 from './SectionTwoP1';
 import SectionTwoP2 from './SectoinTwoP2';
 import SectionThree from './SectionThree';
+import sectionTwoImage1 from './images/team-img1.jpg';
+import sectionTwoImage2 from './images/team-img2.jpg';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,25 +19,25 @@ root.render(
       <SectionOne/>
       {/* section 2 */}
       <section id="skills">
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row">
               <SectionTwoP1/>
-              <SectionTwoP2/>
-              <SectionTwoP2/>
+              <SectionTwoP2 imageName={sectionTwoImage1} eName="Alice Jo" ePosition="Head of HR Department"/>
+              <SectionTwoP2 imageName={sectionTwoImage2} eName="Candy" ePosition="HR manager"/>
             </div>
         </div>
       </section>
       {/* section 3 */}
       <section id="skills">
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row">
 
-                <div class="col-md-12 col-sm-12">
-                    <div class="section-title">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.6s"> Our Common Courses</h1>
-                    <SectionThree/>
-                    <SectionThree/>
-                    <SectionThree/>
+                <div className="col-md-12 col-sm-12">
+                    <div className="section-title">
+                    <h1 className="wow fadeInUp" data-wow-delay="0.6s"> Our Common Courses</h1>
+                    <SectionThree testName="Problem-solving test" testLevel="Intermediate" forWho="Managers" info="Presents one or more problems and asks to provide solutions" noQ="20 Questions" cert="1 professional Certificate"/>
+                    <SectionThree testName="Performance test" testLevel="Starter" forWho="All employees" info="Evaluates how well you can perform a given task" noQ="20 Questions" cert="1 professional Certificate"/>
+                    <SectionThree testName="Communication test" testLevel="Advanced" forWho="All employees" info="To see how well you communicate in work environment" noQ="20 Questions" cert="1 professional Certificate"/>
 
 
                     </div>
