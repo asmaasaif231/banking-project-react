@@ -7,8 +7,8 @@ import SectionOne from './SectionOne';
 import SectionTwoP1 from './SectionTwoP1';
 import SectionTwoP2 from './SectoinTwoP2';
 import SectionThree from './SectionThree';
-import sectionTwoImage1 from './images/team-img1.jpg';
-import sectionTwoImage2 from './images/team-img2.jpg';
+import sectionTwoImage1 from './images/image1.jpg';
+import sectionTwoImage2 from './images/image2.jpg';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,8 +22,8 @@ root.render(
         <div className="container">
             <div className="row">
               <SectionTwoP1/>
-              <SectionTwoP2 imageName={sectionTwoImage1} eName="Alice Jo" ePosition="Head of HR Department"/>
-              <SectionTwoP2 imageName={sectionTwoImage2} eName="Candy" ePosition="HR manager"/>
+              <SectionTwoP2 imageName={sectionTwoImage1} eName="Ahmad Ali" ePosition="Head of HR Department"/>
+              <SectionTwoP2 imageName={sectionTwoImage2} eName="Sultan Saif" ePosition="HR manager"/>
             </div>
         </div>
       </section>

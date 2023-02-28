@@ -226,67 +226,6 @@ background-color: transparent;
 }
 
 
-/*---------------------------------------
-  Home section              
------------------------------------------*/
-
-#home {
-   /* background: #1dc9e3 url('../images/home-img.png') no-repeat;  */
- 
-  background-size: cover;
-  background-position: center center;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-   align-items: center;
-  height: 80vh;
-  position: relative;
-}
-
-#home .overlay {
-background: #dbe647d3; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left,#dbe647 , #54bfe9); /* Chrome 10-25, Safari 5.1-6 */ 
-background: linear-gradient(to left,#cee647 , #54bfe9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-opacity: 0.9;
-position: absolute;
-width: 100%;
-height: 80vh;
-top: 0;
-left: 0;
-right: 0;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-#home img {
-width: 100%;
-height: auto;
-}
-
-#home .home-thumb {
-padding-top: 32px;
-padding-left: 32px;
-}
-
-#home p
-{
-color: #7c7272;
-letter-spacing: 1px;
-}
-
-#skills .section-btn {
-background: #1dc9e3;
-}
-
-#home .section-btn:hover {
-background: transparent !important;
-}
-
 
 /*---------------------------------------
  Divider section              
@@ -303,102 +242,9 @@ line-height: 42px;
 }
 
 
-/*---------------------------------------
- About section              
------------------------------------------*/
-
-#about img {
-width: 100%;
-}
-
-#about .about-thumb {
-margin-bottom: 32px;
-position: relative;
-text-align: center;
-}
-
-#about .about-overlay h3 {
-padding-bottom: 0px;
-}
-
-#about .about-overlay {
-background-color: rgba(250,250,250,0.9);
-border-radius: 2px;
-position: absolute;
-bottom: 0px;
-width: 100%;
-height: 100px;
-overflow: hidden;
-transition: height 450ms;
-}
-
-#about .about-thumb:hover .about-overlay {
-height: 100%;
-background-color: #ffffff;
-color: #222;
-padding-top: 30%;
-opacity: 0.9;
-}
-
-#about .about-thumb:hover h4 {
-color: #1dc9e3;
-}
-
 
 /*---------------------------------------
-  Screenshot section              
------------------------------------------*/
-
-#screenshot .col-md-3 {
-display: block;
-width: 100%;
-padding-bottom: 1rem;
-}
-
-#screenshot img {
-background-color: #ffffff;
-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-border-radius: 2px;
-cursor: pointer;
-display: block;
-margin-top: 20px;
-margin-bottom: 20px;
-position: relative;
-top: 0px;
-transition: all 0.4s ease-in-out;
-}
-
-#screenshot img:hover {
-box-shadow: 0px 16px 22px 0px rgba(0, 0, 0, 0.3);
-top: -6px;
-}
-
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-opacity: 0;
-/* ideally, transition speed should match zoom duration */
--webkit-transition: all 0.3s ease-out;
--moz-transition: all 0.3s ease-out;
--o-transition: all 0.3s ease-out;
-transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-opacity: 1;
-}
-
-.mfp-with-zoom.mfp-ready.mfp-bg {
-opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-opacity: 0;
-}
-
-
-/*---------------------------------------
- Pricing section         
+ skills section         
 -----------------------------------------*/
 
 #skills {
@@ -632,7 +478,8 @@ opacity: 0;
 .social-icon li a:hover {
   background: #1dc9e3;
   color: #ffffff;
-  top: -5px;
+  top: 5px;
+  padding: 10px;
 }
 
 

@@ -19,11 +19,11 @@ function  Footer(){
 
 <div className="col-md-4 col-sm-6">
     <ul className="social-icon">
-        <li><a href="https://www.youtube.com/" className="bi bi-youtube"></a>  |  </li>
+        <li><a href="https://www.youtube.com/" className="bi bi-youtube"></a>    </li>
         
-        <li><a href="https://www.linkedin.com/" className="bi bi-linkedin"></a>  |  </li>
+        <li><a href="https://www.linkedin.com/" className="bi bi-linkedin"></a>    </li>
        
-        <li><a href="https://www.facebook.com/" className="bi bi-facebook"></a>  |  </li>
+        <li><a href="https://www.facebook.com/" className="bi bi-facebook"></a>    </li>
     </ul>
    
    
