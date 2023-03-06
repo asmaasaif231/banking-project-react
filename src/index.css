@@ -31,7 +31,7 @@ letter-spacing: 1px;
 }
 
 h1 {
-  color: #5c5b5b;
+  color: #1f1e1e;
   font-size: 52px;
   letter-spacing: 2px;
   padding-bottom: 10px;
@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-color: #7e7878;
+color: #1f1e1e;
 font-size: 32px;
 }
 
@@ -55,14 +55,14 @@ font-weight: bold;
 }
 
 p {
-  color: #999;
+  color: #1f1e1e;
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
 }
 
 hr {
-border-bottom-color: #999;
+border-bottom-color: #1f1e1e;
 width: 100px;
 }
 
@@ -183,7 +183,7 @@ color: #1dc9e3;
 }
 
 .navbar-default .navbar-nav li a {
-  color: #656565;
+  color: #1f1e1e;
   font-size: 18px;
   font-weight: 500;
   line-height: 50px;
@@ -200,7 +200,7 @@ color: #1dc9e3;
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #656565;
+  color: #1f1e1e;
   background-color: transparent;
 }
 
@@ -236,7 +236,7 @@ background-color: #1dc9e3;
 }
 
 #divider p {
-color: #666666e5;
+color: #1f1e1e;
 font-size: 26px;
 line-height: 42px;
 }
@@ -276,7 +276,7 @@ top: 20px;
 
 #skills .pricing-plan .section-btn:hover {
 background-color: #1dc9e3;
-color: #222;
+color: #1f1e1e;
 }
 
 
@@ -366,6 +366,7 @@ color: #ffffff;
 font-size: 20px;
 margin-bottom: 20px;
 transition: all 0.4s ease-in-out;
+color: black;
 }
 
 .modal-dialog .form-control:focus {
@@ -393,14 +394,14 @@ color: #ffffff;
 }
 
 .modal-dialog .form-control::-moz-placeholder {
-color: #ffffff;
-opacity: 1;
+color: #888484;
+/* opacity: 1; */
 }
 .modal-dialog .form-control:-ms-input-placeholder {
-color: #ffffff;
+color: #575353;
 }
 .modal-dialog .form-control::-webkit-input-placeholder {
-color: #ffffff;
+color: #464141;
 }
 
 .modal.fade .modal-dialog{

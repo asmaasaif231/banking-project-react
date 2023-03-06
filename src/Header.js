@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function   Header(){
     return (
 <header>
@@ -10,13 +12,14 @@ function   Header(){
                     <span className="icon icon-bar"></span>
                     <span className="icon icon-bar"></span>
                 </button>
-                <a href="index.html" className="navbar-brand"><span>HR</span> Website</a>
+                <Link to='/' className="navbar-brand"><span>learning & Development</span> Hub</Link>
             </div>
 
             <div className="collapse navbar-collapse">
                 <ul className="nav navbar-nav navbar-right">
-                    <li><a href="index.html" className="smoothScroll">Home</a></li>
-                    <li><a href="login.html" className="smoothScroll">Login</a></li>
+
+                    <li>  <Link to='/' className="smoothScroll">Home</Link></li>
+                    <li>  <Link to='/LoginForm' className="smoothScroll">Login</Link></li>
                   
                    <hr/>
 

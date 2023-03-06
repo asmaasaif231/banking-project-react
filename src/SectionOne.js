@@ -7,7 +7,7 @@ function  SectionOne(){
             <div className="row">
                 <div className="col-md-12 col-sm-12">
                     <div className="wow bounceIn section-title">
-                        <h1>welcome to HR Website</h1>
+                        <h1>welcome to SIB L&D Hub</h1>
                         <hr/>
                     </div>
                 </div>
