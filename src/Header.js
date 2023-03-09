@@ -20,7 +20,7 @@ function   Header(){
 
                     <li>  <Link to='/' className="smoothScroll">Home</Link></li>
                     <li>  <Link to='/LoginForm' className="smoothScroll">Login</Link></li>
-                  
+                    <li>  <Link to='/Dashboard' className="smoothScroll">Dashboard</Link></li>
                    <hr/>
 
                 </ul>
