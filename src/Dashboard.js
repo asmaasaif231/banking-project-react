@@ -1,13 +1,9 @@
-import React from 'react';
-import './index.css';
+
 import Header from './Header';
 import Footer from './Footer';
-import Dash1 from './Dash1';
-import Dash2 from './Dash2';
-import Dash3 from './Dash3';
-
-
-
+import LeftMenu from './LeftMenu';
+import DashSectionOne from './DashSectionOne';
+import DashSectionTwo from './DashSectionTwo';
 function  Dashboard(){
     return (
         <>
@@ -18,12 +14,17 @@ function  Dashboard(){
                 <div class="container">
                 <div class="row">
             
-                    <Dash1/>
-                    <Dash2/>
-                    <Dash3/>
-                </div>
-                </div>
-                </section>
+                   	<LeftMenu/>
+  			<div id="rightContent">
+                    <DashSectionOne/>
+                    <DashSectionTwo/>
+                  
+			
+
+			</div>
+             </div>
+         </div>
+      </section>
         </body>
         <Footer/>
 </>

@@ -1,4 +1,44 @@
 
+#certimageBack {
+  background-image: url('./images/certficate1.jpg');
+  text-align: center;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+#leftMenu {
+  background-color: #e1e9f0;
+  color: green;
+  text-align: center;
+}
+
+rightContent {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+
+#blog-thumb {
+  border: 1px solid #f0f0f0;
+  position: absolute;
+  padding: 50px;
+  transition: all 1000ms linear;
+}
+
+
+
+blog-thumb:hover {
+
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+}
+
+
+
 
 body {
   /* background: #1c1c1c; */

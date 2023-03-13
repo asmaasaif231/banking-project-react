@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import './bootstrap.css';
 import Header from './Header';
 import Footer from './Footer';
 import SectionOne from './SectionOne';
