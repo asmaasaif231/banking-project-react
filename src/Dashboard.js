@@ -1,4 +1,5 @@
-
+import './bootstrap.css';
+import './index.css';
 import Header from './Header';
 import Footer from './Footer';
 import LeftMenu from './LeftMenu';

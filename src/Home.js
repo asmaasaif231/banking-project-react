@@ -1,6 +1,5 @@
 import React from 'react';
-import './index.css';
-import './bootstrap.css';
+
 import Header from './Header';
 import Footer from './Footer';
 import SectionOne from './SectionOne';
@@ -15,7 +14,7 @@ function  Home(){
     return (
         <>
         <Header/>
-        <body>
+      
           <SectionOne/>
           {/* section 2 */}
           <section id="skills">
@@ -46,7 +45,6 @@ function  Home(){
             </div>
             </section>
 
-        </body>
         <Footer/>
         </>
         

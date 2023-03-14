@@ -1,4 +1,5 @@
 import React from 'react';
+import dash2Image1 from './images/professionalMarketing.jpg';
 
 class DashSectionTwo extends React.Component{
 
@@ -56,8 +57,8 @@ class DashSectionTwo extends React.Component{
 
                                     <fieldset>
 
-                                        {/* <!-- Form Name --> */}
-                                        <legend><center><h3><b>View Score</b></h3></center></legend><br />
+                                    {/* <!-- Form Name --> */}
+                                        <legend><center><h3><b>Our Courses</b></h3></center></legend><br />
 
 
 
@@ -67,13 +68,13 @@ class DashSectionTwo extends React.Component{
 
                                             <div class="col-md-12 inputGroupContainer">
                                                 <div class="input-group">
-                                                    <p> Please Select certification to show score</p>
+                                                    <p> Please Select Course to show Details</p>
                                                     <br />
-                                                    <select name="certificationList" class="form-control selectpicker" required onClick={this.dropDownFunction}>
-                                                        <option value=""> ----------Select your Certificate ---------- </option>
-                                                        <option>Certificate1</option>
-                                                        <option>Certificate2</option>
-                                                        <option>Certificate3</option>
+                                                    <select name="department" class="form-control selectpicker" required>
+                                                        <option value=""> ---------------Select Course --------------- </option>
+                                                        <option>Professional Marketing</option>
+                                                        <option>Financial Modelling</option>
+                                                        <option>Project Management</option>
 
                                                     </select>
 
@@ -87,7 +88,7 @@ class DashSectionTwo extends React.Component{
                                             <label class="col-md-4 control-label"></label>
                                             <div class="col-md-4">
                                                 <br />
-                                                <button type="submit" class="btn btn-warning"> View <span class="glyphicon glyphicon-send"></span></button>
+                                                <button type="submit" class="btn btn-warning"> View Details <span class="glyphicon glyphicon-send"></span></button>
                                             </div>
                                         </div>
 
@@ -115,17 +116,17 @@ class DashSectionTwo extends React.Component{
                                     <fieldset>
 
                                         {/* <!-- Form Name --> */}
-                                        <br />
-                                        <br />
-                                        <legend><center><h3><b>Your Score is</b></h3></center></legend><br />
-                                        <br />
+                                        <div class="courseDetails">
+                                            {/* <img src="./images/professionalMarketing.jpg"/> */}
+                                            <img src={dash2Image1}/>
+                                            <h3>DUBAI</h3>
+                                            <h3>23MARCH2023</h3>
+                                            <h3>2 days </h3>
 
-                                        <h1>  {this.state.Message} </h1>
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-
+                                              {/* <h1>  {this.state.Message} </h1> */}
+                                        </div>
+                                      
+                                     
 
                                     </fieldset>
                                 </form>

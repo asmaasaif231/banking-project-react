@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Header from './Header';
 import Footer from './Footer';
 import Signup from './Signup';
+import axios from 'axios';
+import { Navigate } from "react-router-dom";
 
 class LoginForm extends React.Component{
 
@@ -11,12 +13,27 @@ class LoginForm extends React.Component{
         this.state={
             user_name:"",
             user_password:"",
-            errorMessage:""
+            errorMessage:"",
+            users:[]
         }
     }
 
+    componentDidMount(){
+        axios.get('https://jsonplaceholder.typicode.com/users')
+        .then(
+                res=>{
+                    let tempData = res.data;
+                    this.setState({
+                        users:tempData 
+                    });
+
+                }
+        );
+    }
     validatePassword = (e) => {
-        let lowerCaseCheck =/^(\S)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])[a-zA-Z0-9~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]{10,16}$/;
+        this.setState({user_password:e.target.value});
+        let lowerCaseCheck =/^(\S)(?=.*[A-Z])(?=.*[a-z])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])[a-zA-Z~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]{6,16}$/;
+        // let lowerCaseCheck =/^(\S)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])[a-zA-Z0-9~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]{6,16}$/;
       
         if(e.target.value.match(lowerCaseCheck)){
           this.setState({
@@ -28,11 +45,29 @@ class LoginForm extends React.Component{
           });}
       }
 
+      authenticateUser = (e)=>{
+        e.preventDefault();
+        
+        let flag=0;
+        this.state.users.forEach(user => {
+            if(user.email==this.state.user_name && user.email==this.state.user_password){
+                flag=1;
+            }
+        });
+        if(flag==1){
+            this.setState({errorMessage:""});
+            window.location.href = '/Dashboard';
+            }
+        else{
+            this.setState({errorMessage:"Invalid details"});
+            }   
+    }
+
     render(){
         return(
         <>
             <Header/>
-                <body>
+                
                     <section id="skills">
                     <div className="container">
                         <div className="row">
@@ -41,7 +76,7 @@ class LoginForm extends React.Component{
                                 <div className="section-title"></div>
                                 {/* registeration form */}
                                 <div className="container">
-                                <form className="well form-horizontal" action="" method="" name="SignupForm" >
+                                <form className="well form-horizontal" action="" method="" name="SignupForm" onSubmit={this.authenticateUser} >
                                 {/* begining of fields  */}
                                 <fieldset>
 
@@ -55,7 +90,9 @@ class LoginForm extends React.Component{
                                         <div className="col-md-4 inputGroupContainer">
                                         <div className="input-group">
                                         <span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span>
-                                        <input  name="user_name" placeholder="Username" className="form-control"  type="text" required minLength="8" maxLength="20"/>
+                                        <input  name="user_name" placeholder="Username" onChange={(e)=>{
+                                            this.setState({user_name:e.target.value})
+                                        }} className="form-control"  type="text" required minLength="8" maxLength="20"/>
                                             </div>
                                         </div>
                                         </div>
@@ -99,7 +136,7 @@ class LoginForm extends React.Component{
                         </div>
                     </div>
                     </section>
-                </body>
+                
             <Footer/>
         </>
         );
