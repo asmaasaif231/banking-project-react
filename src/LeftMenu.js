@@ -1,4 +1,6 @@
 import LeftMenuComp from "./LeftMenuComp";
+import { Link } from "react-router-dom";
+
 function  LeftMenu(){
     return (
         <>
@@ -9,7 +11,7 @@ function  LeftMenu(){
 
             <LeftMenuComp menuName="Add Certificates"/>
             <LeftMenuComp menuName="My Scores"/>
-            <LeftMenuComp menuName="LogOut"/>
+            <a> <Link to='/'><LeftMenuComp menuName="LogOut"/></Link></a>
   
 </div>
                  </div>

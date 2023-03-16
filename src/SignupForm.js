@@ -53,6 +53,7 @@ class SignupForm extends React.Component{
                 console.log(res.data);
             }    
         );
+        window.location.href = '/Dashboard';
   }
 
     
@@ -173,7 +174,7 @@ class SignupForm extends React.Component{
                                             <div className="col-md-4 inputGroupContainer">
                                             <div className="input-group">
                                         <span className="input-group-addon"><i className="glyphicon glyphicon-user"></i></span>
-                                        <input name="user_password" placeholder="Password" className="form-control"  type="password" required onChange={this.validatePassword} minLength="8" maxLength="20"/>
+                                        <input name="user_password" placeholder="Password" className="form-control"  type="password" required onChange={this.validatePassword} minLength="6" maxLength="20"/>
                                             </div>
                                         </div>
                                         {/* <!-- error message --> */}
